@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Crear una cuenta</h2>
+    <form id="registroForm">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" placeholder="xxx xx xx xx" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Áreas de interés:</label>
+            <input type="checkbox" id="programacion" name="areas"> Programación
+            <input type="checkbox" id="diseno" name="areas"> Diseño
+            <input type="checkbox" id="ciencias" name="areas"> Ciencias
+        </div>
+        
+        <div class="form-group">
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" required>
+        </div>
+        
+        <div class="form-group">
+            <input type="checkbox" id="aceptar" required>
+            <label for="aceptar">Acepto los términos de protección de datos</label>
+        </div>
+        
+        <button type="button" onclick="validarFormulario()">Agregar</button>
+    </form>
+    
+    <div id="listaLibros">
+        <h2>Selección de Libros</h2>
+        
+        <div class="form-group">
+            <label for="libro">Nombre del libro:</label>
+            <select id="libro">
+                <option value="JavaScript Básico">JavaScript Básico - 20€</option>
+                <option value="HTML5">HTML5 - 15€</option>
+                <option value="CSS3">CSS3 - 18€</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" step="0.01">
+        </div>
+        
+        <div class="form-group">
+            <label for="iva">IVA:</label>
+            <select id="iva">
+                <option value="0.10">Reducido (10%)</option>
+                <option value="0.21">Normal (21%)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+        </div>
+        
+        <button type="button" onclick="calcularPrecio()">Calcular</button>
+    </div>
+    
+    <script src="ExamenJACA.js"></script>
+</body>
+</html>

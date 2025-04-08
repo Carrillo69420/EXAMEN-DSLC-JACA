@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 200px;
+    padding: 5px;
+}
+
+#listaLibros {
+    margin-top: 20px;
+    display: none;
+}
